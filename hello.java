@@ -34,7 +34,7 @@ class test3{
     public static void main(String[] args){
         //double data types
         double num = 5.5;
-        double num1 = 10.5;
+        double num1 = 11.5;
         double num2 = 15.5;
         double result = num1 + num2 + num;
         System.out.println(num);
