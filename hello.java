@@ -43,3 +43,14 @@ class test3{
         System.out.println("The result is: " + result);
     }
 }
+class test4{
+    public static void main(String[] args){
+        //char data types
+        char ch = 'A';
+        char ch1 = 'B';
+        char ch2 = 'C';
+        System.out.println(ch);
+        System.out.println(ch1);
+        System.out.println(ch2);
+    }
+}
