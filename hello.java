@@ -54,3 +54,12 @@ class test4{
         System.out.println(ch2);
     }
 }
+class test5{
+    public static void main(String[] args){
+        //boolean data types
+        boolean isJavaFun = true;
+        boolean isFishTasty = false;
+        System.out.println(isJavaFun);
+        System.out.println(isFishTasty);
+    }
+}
