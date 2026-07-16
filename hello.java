@@ -19,6 +19,14 @@ class test1{
 }
 class test2{
     public static void main(String[] args){
-        
+        //float data types
+        float num = 5.5f;
+        float num1 = 10.5f;
+        float num2 = 15.5f;
+        float result = num1 + num2 + num;
+        System.out.println(num);
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println("The result is: " + result);
     }
 }
