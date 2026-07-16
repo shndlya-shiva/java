@@ -30,3 +30,8 @@ class test2{
         System.out.println("The result is: " + result);
     }
 }
+class test3{
+    public static void main(String[] args){
+        
+    }
+}
