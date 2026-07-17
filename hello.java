@@ -63,3 +63,8 @@ class test5{
         System.out.println(isFishTasty);
     }
 }
+class test6{
+    public static void main(String[] args){
+        //String data types
+    }
+}
