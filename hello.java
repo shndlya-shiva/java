@@ -94,3 +94,17 @@ class test7{
         System.out.println("The result is: " + result);
     }
 }
+class test8{
+    public static void main(String[] args){
+        //short data types
+        //short data types are used to store whole numbers from -32,768 to 32,767
+        short num = 10000;
+        short num1 = 20000;
+        short num2 = 30000;
+        short result = (short)(num + num1 + num2);
+        System.out.println(num);
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println("The result is: " + result);
+    }
+}
