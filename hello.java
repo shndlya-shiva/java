@@ -66,5 +66,11 @@ class test5{
 class test6{
     public static void main(String[] args){
         //String data types
+        String name = "John";
+        String name1 = "Doe";
+        String name2 = "Smith";
+        System.out.println(name);
+        System.out.println(name1);
+        System.out.println(name2);
     }
 }
