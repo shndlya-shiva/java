@@ -7,6 +7,7 @@ class test{
 class test1{
     public static void main(String[] args){
      //int data types
+     //int stores integer values (whole numbers), without decimals, such as 123 or -123
         int num = 5;
         int num1 = 10;
         int num2 = 15;
@@ -20,6 +21,7 @@ class test1{
 class test2{
     public static void main(String[] args){
         //float data types
+        //float data types are used to store decimal numbers, such as 3.14 or -3.14 but with less precision than double
         float num = 5.5f;
         float num1 = 10.5f;
         float num2 = 15.5f;
@@ -33,6 +35,7 @@ class test2{
 class test3{
     public static void main(String[] args){
         //double data types
+        //double data types are used to store decimal numbers, such as 3.14 or -3.14
         double num = 5.5;
         double num1 = 11.5;
         double num2 = 15.5;
@@ -46,6 +49,7 @@ class test3{
 class test4{
     public static void main(String[] args){
         //char data types
+        //char data types are used to store single characters, such as 'A' or 'B'
         char ch = 'A';
         char ch1 = 'B';
         char ch2 = 'C';
@@ -57,6 +61,7 @@ class test4{
 class test5{
     public static void main(String[] args){
         //boolean data types
+        //boolean data types are used to store true or false values
         boolean isJavaFun = true;
         boolean isFishTasty = false;
         System.out.println(isJavaFun);
@@ -66,11 +71,26 @@ class test5{
 class test6{
     public static void main(String[] args){
         //String data types
+        //String data types are used to store text, such as "Hello" or "World"
         String name = "John";
         String name1 = "Doe";
         String name2 = "Smith";
         System.out.println(name);
         System.out.println(name1);
         System.out.println(name2);
+    }
+}
+class test7{
+    public static void main(String[] args){
+        //byte data types
+        //byte data types are used to store whole numbers from -128 to 127
+        byte num = 100;
+        byte num1 = 50;
+        byte num2 = 25;
+        byte result = (byte)(num + num1 + num2);
+        System.out.println(num);
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println("The result is: " + result);
     }
 }
