@@ -137,5 +137,9 @@ class test10 {
         byte a = 10;
         int j = a;
         System.out.println(j);
+        //converting float to int
+        float f = 10.5f;
+        int k = (int) f;
+        System.out.println(k);
     }
 }
