@@ -133,5 +133,9 @@ class test10 {
         int i = 267;
         byte b = (byte) i;
         System.out.println(b);
+        //converting byte to int
+        byte a = 10;
+        int j = a;
+        System.out.println(j);
     }
 }
