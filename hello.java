@@ -122,11 +122,11 @@ class test9{
         System.out.println("The result is: " + result);
     }
 }
-//type casting is the process of converting a variable from one data type to another.
-// In Java, there are two types of type casting: implicit and explicit.
-// Implicit casting is done automatically by the compiler when a smaller data type is converted to a larger data type.
-// Explicit casting is done manually by the programmer when a larger data type is converted to a smaller data type.
 class test10 {
+    //type casting is the process of converting a variable from one data type to another.
+    // In Java, there are two types of type casting: implicit and explicit.
+    // Implicit casting is done automatically by the compiler when a smaller data type is converted to a larger data type.
+    // Explicit casting is done manually by the programmer when a larger data type is converted to a smaller data type.
     public static void main(String[] args) {
         //conversion of data types
         //converting int to byte
