@@ -128,6 +128,10 @@ class test9{
 // Explicit casting is done manually by the programmer when a larger data type is converted to a smaller data type.
 class test10 {
     public static void main(String[] args) {
-        
+        //conversion of data types
+        //converting int to byte
+        int i = 267;
+        byte b = (byte) i;
+        System.out.println(b);
     }
 }
