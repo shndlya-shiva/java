@@ -108,3 +108,17 @@ class test8{
         System.out.println("The result is: " + result);
     }
 }
+class test9{
+    public static void main(String[] args){
+        //long data types
+        //long data types are used to store whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+        long num = 1000000000L;
+        long num1 = 2000000000L;
+        long num2 = 3000000000L;
+        long result = num + num1 + num2;
+        System.out.println(num);
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println("The result is: " + result);
+    }
+}
