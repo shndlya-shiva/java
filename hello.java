@@ -141,5 +141,9 @@ class test10 {
         float f = 10.5f;
         int k = (int) f;
         System.out.println(k);
+        //converting int to float
+        int m = 15;
+        float n = m;
+        System.out.println(n);
     }
 }
