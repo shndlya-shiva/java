@@ -145,5 +145,11 @@ class test10 {
         int m = 15;
         float n = m;
         System.out.println(n);
+        //type promotion is the automatic conversion of a smaller data type to a larger data type.
+        byte num1 = 10;
+        byte num2 = 40;
+        int result = num1 * num2;
+        System.out.println(result);
+        // all the above conversions are examples of type casting and type promotion in Java.
     }
 }
