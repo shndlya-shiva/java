@@ -138,3 +138,34 @@ class test10{
         System.out.println("Quotient: " + quotient);
     }
 }
+//type casting is the process of converting a variable from one data type to another.
+// In Java, there are two types of type casting: implicit and explicit.
+// Implicit casting is done automatically by the compiler when a smaller data type is converted to a larger data type.
+// Explicit casting is done manually by the programmer when a larger data type is converted to a smaller data type.
+class test11 {
+    public static void main(String[] args) {
+        //conversion of data types
+        //converting int to byte
+        int i = 267;
+        byte b = (byte) i;
+        System.out.println(b);
+        //converting byte to int
+        byte a = 10;
+        int j = a;
+        System.out.println(j);
+        //converting float to int
+        float f = 10.5f;
+        int k = (int) f;
+        System.out.println(k);
+        //converting int to float
+        int m = 15;
+        float n = m;
+        System.out.println(n);
+        //type promotion is the automatic conversion of a smaller data type to a larger data type.
+        byte num1 = 10;
+        byte num2 = 40;
+        int result = num1 * num2;
+        System.out.println(result);
+        // all the above conversions are examples of type casting and type promotion in Java.
+    }
+}
