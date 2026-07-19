@@ -236,5 +236,7 @@ class test14 {
         System.out.println("Is a <= b? " + e);
         boolean f = a >= b;
         System.out.println("Is a >= b? " + f);
+        boolean g = a == b;
+        System.out.println("Is a == b? " + g);
     }
 }
