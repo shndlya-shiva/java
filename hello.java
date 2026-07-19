@@ -124,3 +124,8 @@ class test9{
         System.out.println("The result is: " + result);
     }
 }
+class test10{
+    public static void main(String[] args){
+        //arithmetic operations
+    }
+}
