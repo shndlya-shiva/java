@@ -169,3 +169,14 @@ class test11 {
         // all the above conversions are examples of type casting and type promotion in Java.
     }
 }
+class test12 {
+    public static void main(String[] args) {
+        //type promotion in expressions
+        byte a = 10;
+        byte b = 20;
+        byte c = 30;
+        int result = a + b + c;
+        System.out.println(result);
+        //in this case, the values of a, b and c are promoted to int before the addition operation is performed.
+    }
+}
