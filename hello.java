@@ -229,14 +229,22 @@ class test14 {
         int a = 10;
         int b = 29;
         boolean c = a < b;
+        // less than operator
         System.out.println("Is a < b? " + c);
         boolean d = a > b;
+        // greater than operator
         System.out.println("Is a > b? " + d);
         boolean e = a <= b;
+        // less than or equal to operator
         System.out.println("Is a <= b? " + e);
         boolean f = a >= b;
+        // greater than or equal to operator
         System.out.println("Is a >= b? " + f);
         boolean g = a == b;
+        // equal to operator
         System.out.println("Is a == b? " + g);
+        boolean h = a != b;
+        // not equal to operator
+        System.out.println("Is a != b? " + h);
     }
 }
