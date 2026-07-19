@@ -223,3 +223,14 @@ class test13 {
         System.out.println("e after ++e: " + e);
     }
 }
+class test14 {
+    public static void main(String[] args) {
+        //relational operators
+        int a = 10;
+        int b = 29;
+        boolean c = a < b;
+        System.out.println("Is a < b? " + c);
+        boolean d = a > b;
+        System.out.println("Is a > b? " + d);
+    }
+}
