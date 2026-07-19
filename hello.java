@@ -184,8 +184,42 @@ class test13 {
     public static void main(String[]args) {
         //other arithematic operatiions
         int a = 10;
-        int b = 20;
-        int result = a + b;
-        System.out.println("The result is " + result);
+        a += 5; // a = a + 5
+        System.out.println("a after += 5: " + a);
+        a -= 3; // a = a - 3
+        System.out.println("a after -= 3: " + a);
+        a *= 2; // a = a * 2
+        System.out.println("a after *= 2: " + a);
+        a /= 4; // a = a / 4
+        System.out.println("a after /= 4: " + a);
+        a %= 3; // a = a % 3
+        System.out.println("a after %= 3: " + a);
+        //post increment and decrement operators
+        int b = 10;
+        b++; // b = b + 1
+        System.out.println("b after ++: " + b);
+        b--; // b = b - 1
+        System.out.println("b after --: " + b);
+        //pre increment and decrement operators
+        int c = 20;
+        ++c; // c = c + 1
+        System.out.println("c after ++: " + c);
+        --c; // c = c - 1
+        System.out.println("c after --: " + c);
+        //diff between post and pre increment and decrement operators
+        int d = 30;
+        int e = 30;
+        int f = d++;
+        // f = d, then d = d + 1
+        // in this case, f will be 30 and d will be 31 since the value of d is incremented after the assignment to f.
+        // first fetch the value of d and assign it to f, then increment the value of d by 1.
+        System.out.println("f after d++: " + f);
+        System.out.println("d after d++: " + d);
+        int g = ++e;
+        // e = e + 1, then g = e
+        // in this case, g will be 31 and e will be 31 since the value of e is incremented before the assignment to g.
+        // first increment the value of e by 1, then fetch the value of e and assign it to g.
+        System.out.println("g after ++e: " + g);
+        System.out.println("e after ++e: " + e);
     }
 }
