@@ -180,3 +180,12 @@ class test12 {
         //in this case, the values of a, b and c are promoted to int before the addition operation is performed.
     }
 }
+class test13 {
+    public static void main(String[]args) {
+        //other arithematic operatiions
+        int a = 10;
+        int b = 20;
+        int result = a + b;
+        System.out.println("The result is " + result);
+    }
+}
