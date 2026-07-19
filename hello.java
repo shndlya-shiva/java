@@ -248,3 +248,8 @@ class test14 {
         System.out.println("Is a != b? " + h);
     }
 }
+class test15 {
+    public static void main(String[] args) {
+        //logical operators
+    }
+}
