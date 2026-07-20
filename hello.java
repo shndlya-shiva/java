@@ -287,3 +287,8 @@ class test15 {
         // logical AND operator with boolean variables
     }
 }
+class test16 {
+    public static void main(String[] args) {
+        //if statement
+    }
+}
