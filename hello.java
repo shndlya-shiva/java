@@ -311,6 +311,8 @@ class test16 {
         }
         //ternary operator
         int result = (num > num1) ? num : num1;
+        // ? is the ternary if operator
+        // : is the else operator 
         System.out.println("Result: " + result);
     }
 }
