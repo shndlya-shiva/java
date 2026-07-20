@@ -301,5 +301,13 @@ class test16 {
         } else {
             System.out.println("num is less than or equal to num1");
         }
+        //if-else-if statement
+        if (num > num1) {
+            System.out.println("num is greater than num1");
+        } else if (num < num1) {
+            System.out.println("num is less than num1");
+        } else {
+            System.out.println("num is equal to num1");
+        }
     }
 }
