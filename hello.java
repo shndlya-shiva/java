@@ -281,6 +281,8 @@ class test15 {
         System.out.println("(x < y) || (z > j): " + l);
         // logical NOT operator with relational operators
         boolean i = !(x < y);
+        boolean m = (x > y);
+        System.out.println("!(x < y): " + !m);
         System.out.println("!(x < y): " + i);
         // logical AND operator with boolean variables
     }
