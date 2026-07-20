@@ -270,5 +270,9 @@ class test15 {
         int y = 20;
         boolean g = (x < y) && (x > 5);
         System.out.println("(x < y) && (x > 5): " + g);
+        // logical OR operator with relational operators
+        boolean h = (x < y) || (x > 5);
+        System.out.println("(x < y) || (x > 5): " + h);
+
     }
 }
