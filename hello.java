@@ -262,5 +262,8 @@ class test15 {
         boolean e = !a;
         // logical NOT operator
         System.out.println("!a: " + e);
+        boolean f = !b;
+        // logical NOT operator
+        System.out.println("!b: " + f);
     }
 }
