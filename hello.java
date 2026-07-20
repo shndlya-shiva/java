@@ -251,5 +251,10 @@ class test14 {
 class test15 {
     public static void main(String[] args) {
         //logical operators
+        boolean a = true;
+        boolean b = false;
+        boolean c = a && b;
+        // logical AND operator
+        System.out.println("a && b: " + c);
     }
 }
