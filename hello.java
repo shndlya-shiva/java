@@ -268,13 +268,18 @@ class test15 {
         // logical AND operator with relational operators
         int x = 10;
         int y = 20;
+        int z = 30;
+        int j = 40;
         boolean g = (x < y) && (x > 5);
+        boolean k = (x < y) && (z > j);
         System.out.println("(x < y) && (x > 5): " + g);
+        System.out.println("(x < y) && (z > j): " + k);
         // logical OR operator with relational operators
         boolean h = (x < y) || (x > 5);
         System.out.println("(x < y) || (x > 5): " + h);
         // logical NOT operator with relational operators
         boolean i = !(x < y);
         System.out.println("!(x < y): " + i);
+        // logical AND operator with boolean variables
     }
 }
