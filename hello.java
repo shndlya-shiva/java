@@ -290,5 +290,10 @@ class test15 {
 class test16 {
     public static void main(String[] args) {
         //if statement
+        int num = 10;
+        int num1 = 20;
+        if (num < num1) {
+            System.out.println("num is less than num1");
+        }
     }
 }
