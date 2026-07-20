@@ -276,7 +276,9 @@ class test15 {
         System.out.println("(x < y) && (z > j): " + k);
         // logical OR operator with relational operators
         boolean h = (x < y) || (x > 5);
+        boolean l = (x < y) || (z > j);
         System.out.println("(x < y) || (x > 5): " + h);
+        System.out.println("(x < y) || (z > j): " + l);
         // logical NOT operator with relational operators
         boolean i = !(x < y);
         System.out.println("!(x < y): " + i);
