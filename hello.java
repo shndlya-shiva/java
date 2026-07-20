@@ -256,5 +256,9 @@ class test15 {
         boolean c = a && b;
         // logical AND operator
         System.out.println("a && b: " + c);
+        boolean d = a || b;
+        // logical OR operator
+        System.out.println("a || b: " + d);
+        
     }
 }
