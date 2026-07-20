@@ -295,5 +295,11 @@ class test16 {
         if (num < num1) {
             System.out.println("num is less than num1");
         }
+        //if-else statement
+        if (num > num1) {
+            System.out.println("num is greater than num1");
+        } else {
+            System.out.println("num is less than or equal to num1");
+        }
     }
 }
