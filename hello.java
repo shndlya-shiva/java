@@ -273,6 +273,8 @@ class test15 {
         // logical OR operator with relational operators
         boolean h = (x < y) || (x > 5);
         System.out.println("(x < y) || (x > 5): " + h);
-
+        // logical NOT operator with relational operators
+        boolean i = !(x < y);
+        System.out.println("!(x < y): " + i);
     }
 }
