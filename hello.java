@@ -259,6 +259,8 @@ class test15 {
         boolean d = a || b;
         // logical OR operator
         System.out.println("a || b: " + d);
-        
+        boolean e = !a;
+        // logical NOT operator
+        System.out.println("!a: " + e);
     }
 }
