@@ -309,5 +309,8 @@ class test16 {
         } else {
             System.out.println("num is equal to num1");
         }
+        //ternary operator
+        int result = (num > num1) ? num : num1;
+        System.out.println("Result: " + result);
     }
 }
