@@ -316,3 +316,8 @@ class test16 {
         System.out.println("Result: " + result);
     }
 }
+class test17 {
+    public static void main(String[] args) {
+        //switch statement
+    }
+}
