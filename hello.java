@@ -362,5 +362,17 @@ class test17 {
             case 6, 7 -> System.out.println("Weekend");
             default -> System.out.println("Invalid Day");
         }
+        //switch as statement with string
+        String month = "January";
+        String result = "";
+        result = switch (month) {
+            case "January", "February", "March" -> "Winter";
+            case "April", "May", "June" -> "Spring";
+            case "July", "August", "September" -> "Summer";
+            case "October", "November", "December" -> "Fall";
+            default -> "Invalid Month";
+        };
+        System.out.println("Month: " + month);
+        System.out.println("Season: " + result);
     }
 }
