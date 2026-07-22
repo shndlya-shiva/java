@@ -409,3 +409,9 @@ class test19 {
         }while(i<=4);
     }
 }
+class test20 {
+    public static void main(String [] args) {
+        // for loop 
+        
+    }
+}
