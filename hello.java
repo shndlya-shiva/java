@@ -378,6 +378,12 @@ class test17 {
 }
 class test18 {
     public static void main(String[] args) {
-        
+        //types of loops in java - for loop, while loop, do-while loop
+        //while loop
+        int num = 0;
+        while (num <= 10) {
+            System.out.println(num);
+            num++;
+        }
     }
 }
