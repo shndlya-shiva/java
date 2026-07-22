@@ -416,5 +416,13 @@ class test20 {
         for(i = 0; i <= 10; i++) {
             System.out.println(i);
         }
-    }
+        //nested for loop
+        int a, n;
+        for (a = 1; a <= 6; a++) {
+            System.out.println("Day " + a);
+            for (n = 1; n <= 5; n++) {
+                System.out.println("" + (n+8) + "-" + (n+9));
+            }
+        }
+    } 
 }
