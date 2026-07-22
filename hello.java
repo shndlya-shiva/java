@@ -385,5 +385,16 @@ class test18 {
             System.out.println("Hii " + num);
             num++;
         }
+        // nested while loop
+        int i = 1;
+        while (i <= 5) {
+            System.out.println("Hello " + i);
+            int j = 1;
+            while (j <= 4) {
+                System.out.println("Yello " +j);
+                j++;
+            }
+            i++;
+        }
     }
 }
