@@ -376,3 +376,8 @@ class test17 {
         System.out.println("Season: " + result);
     }
 }
+class test18 {
+    public static void main(String[] args) {
+        
+    }
+}
