@@ -412,6 +412,9 @@ class test19 {
 class test20 {
     public static void main(String [] args) {
         // for loop 
-        
+        int i;
+        for(i = 0; i <= 10; i++) {
+            System.out.println(i);
+        }
     }
 }
