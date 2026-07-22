@@ -382,7 +382,7 @@ class test18 {
         //while loop
         int num = 0;
         while (num <= 10) {
-            System.out.println(num);
+            System.out.println("Hii " + num);
             num++;
         }
     }
