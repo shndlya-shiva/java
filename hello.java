@@ -398,3 +398,14 @@ class test18 {
         }
     }
 }
+class test19 {
+    public static void main(String [] args) {
+        //do while loop
+        int i = 5;
+        do
+        {
+            System.out.println("hello " + i);
+            i++;
+        }while(i<=4);
+    }
+}
