@@ -442,3 +442,17 @@ class test21{
         }
     }
 }
+class test22 {
+    public int add(int n1,int n2) {
+        // calling and invoking values
+        int r = n1 + n2;
+        return r;
+    }
+}
+public class Demo{
+    public static void main(String[] args) {
+        test22 calc = new test22();
+        int result = calc.add(14,55);
+        System.out.println(result);
+    }
+}
