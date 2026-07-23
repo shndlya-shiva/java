@@ -430,5 +430,11 @@ class test21{
     public static void main(String[] args) {
         //use for for lopp with if
         int a = 0;
+        if (a <= 5 ){
+            for (; a <= 5; a++) {
+                System.out.println("Hello");
+            }
+        }
+        
     }
 }
