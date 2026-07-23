@@ -426,3 +426,9 @@ class test20 {
         }
     } 
 }
+class test21{
+    public static void main(String[] args) {
+        //use for for lopp with if
+        int a = 0;
+    }
+}
