@@ -462,6 +462,18 @@ class test23
         return "Pen";
     }
 }
+class test24 {
+    //method overloading
+    public int add(int n1, int n2, int n3) {
+        return n1 + n2 + n3;
+    }
+    public int add(int n1, int n2) {
+        return n1 + n2;
+    }
+    public double add(double n1, int n2) {
+        return n1 + n2;
+    }
+}
 public class Demo{
     public static void main(String[] args) {
         test22 calc = new test22();
@@ -471,5 +483,12 @@ public class Demo{
         com.playmusic();
         String str = com.getMeAPen(result);
         System.out.println(str);
+        test24 calTest24 = new test24();
+        int r = calTest24.add(12,3);
+        int r1 = calTest24.add(12, result, r);
+        double r2 = calTest24.add(r, r1);
+        System.out.println(r);
+        System.out.println(r1);
+        System.out.println(r2);
     }
 }
