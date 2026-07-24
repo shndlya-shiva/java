@@ -449,10 +449,27 @@ class test22 {
         return r;
     }
 }
+class test23 
+{
+    // diff example
+    public void playmusic() 
+    {
+        System.out.println("music playing....");
+    }
+    
+    public String getMeAPen(int cost) 
+    {
+        return "Pen";
+    }
+}
 public class Demo{
     public static void main(String[] args) {
         test22 calc = new test22();
         int result = calc.add(14,55);
         System.out.println(result);
+        test23 com = new test23();
+        com.playmusic();
+        String str = com.getMeAPen(result);
+        System.out.println(str);
     }
 }
