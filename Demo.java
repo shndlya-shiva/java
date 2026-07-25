@@ -474,6 +474,85 @@ class test24 {
         return n1 + n2;
     }
 }
+class test25 {
+    public static void main(String[] args) {
+        // into to array
+        int num[] = {12,23,34};
+        System.out.println(num[1]);
+    }
+}
+class test26 {
+    public static void main(String[] args) {
+        //working with array reassing the values
+        int num [] = {12,122,413,413};
+        num[3] = 23;
+        System.out.println(num);
+        //array with the loop
+        int nums [] = new int[4];
+        nums[0]=2;
+        nums[1]=3;
+        nums[2]=8;
+        nums[3]=4;
+        for (int j = 0; j < 6; j++) {
+            System.out.println(nums[j]);
+        }
+    }
+}
+class test27 {
+    public static void main(String[] args) {
+        // Multi Dimensional Array
+        int nums[][] = new int[3][4];
+        // using Math.random() class
+        // math random is a class thath fatches random value that are in the form od double
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                nums[i][j] = (int)(Math.random()*100);
+
+            }
+        } 
+        // using normal for loop 
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print(nums[i][j] + " ");
+            }
+            System.out.println();
+        }
+        // Enhanced for loop
+        for (int n[] : nums) {
+            for (int m : n) {
+                System.out.print(m + " ");
+
+            }
+            System.out.println();
+        }
+    }
+}
+class test28 {
+    public static void main(String[] args) {
+        // Jagged Array
+        int nums [][] = new int[3][];
+        nums[0] = new int[5];
+        nums[1] = new int[7];
+        nums[2] = new int[6];
+        // .length is a built-in property used exclusively to find the number of elements in an array
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums[i].length; j++) {
+                nums [i][j] = (int)(Math.random()*100);
+            }
+        }
+        for (int n[] : nums) {
+            for (int m : n) {
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+class test29 {
+    int rollno;
+    String name;
+    double marks;
+}
 public class Demo{
     public static void main(String[] args) {
         test22 calc = new test22();
@@ -490,5 +569,24 @@ public class Demo{
         System.out.println(r);
         System.out.println(r1);
         System.out.println(r2);
+        test29 student1 = new test29();
+        student1.rollno = 1;
+        student1.name = "Matt";
+        student1.marks = Math.random()*100;
+        test29 student2 = new test29();
+        student2.rollno = 2;
+        student2.name = "Mathew";
+        student2.marks = Math.random()*100;
+        test29 student3 = new test29();
+        student3.rollno = 3;
+        student3.name = "Fisk";
+        student3.marks = Math.random()*100;
+        test29 students[] = new test29[3];
+        students[0] = student1;
+        students[1] = student2;
+        students[2] = student3;
+        for (int i = 0; i < students.length; i++) {
+            System.out.println(students[i].name + ":" + students[i].marks);
+        }
     }
 }
