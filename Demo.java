@@ -553,6 +553,40 @@ class test29 {
     String name;
     double marks;
 }
+class test30 {
+    public static void main(String[] args) {
+        // into to string 
+        String name =  "Matt";
+        System.out.println("Hello " + name);
+        System.out.println(name.charAt(2));
+        System.out.println(name.concat(" Murdock"));
+    }
+}
+class test31 {
+    public static void main(String[] args) {
+        // String are of two type - Mutable and Immutable. 
+        // Mutable are that can be changed.
+        // It consits two diff data types - String buffer and string builder. 
+        // Immutable are that can not be changed.
+        // String Buffer is thread safe.
+        StringBuffer sb = new StringBuffer("Matt ");
+        sb.append(" Murdock");
+        sb.deleteCharAt(4);
+        System.out.println(sb.capacity());
+        System.out.println(sb);
+    }
+}
+class test32 {
+    public static void main(String[] args) {
+        // String Builder
+        // String Builder is not thread safe.
+        StringBuilder sb = new StringBuilder("Fisk ");
+        sb.append(" Willson");
+        sb.deleteCharAt(4);
+        System.out.println(sb.capacity());
+        System.out.println(sb);
+    }
+}
 public class Demo{
     public static void main(String[] args) {
         test22 calc = new test22();
