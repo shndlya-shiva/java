@@ -587,6 +587,16 @@ class test32 {
         System.out.println(sb);
     }
 }
+class test33{
+    static String Name;
+    int Price;
+    String Brand;
+    // Static belogs to class itself, not to individual object.
+    // It stops the class form making a copy of a varible & keep one shared one version for everyone. 
+    public void show() {
+        System.out.println(Brand + " : " + Name + " : " + Price);
+    }
+}
 public class Demo{
     public static void main(String[] args) {
         test22 calc = new test22();
@@ -622,5 +632,16 @@ public class Demo{
         for (int i = 0; i < students.length; i++) {
             System.out.println(students[i].name + ":" + students[i].marks);
         }
+        test33 obj1 = new test33();
+        obj1.Brand = "Apple";
+        obj1.Price = 1499;
+        obj1.Name = "Smartphone";
+        test33 obj2 = new test33();
+        obj2.Brand = "Samsung";
+        obj2.Price = 1599;
+        obj2.Name = "Smarthphone";
+        obj1.Name = "Phone";
+        obj1.show();
+        obj2.show();
     }
 }
