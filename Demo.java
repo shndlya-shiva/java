@@ -617,6 +617,7 @@ class test34 {
 class test35 {
     private String name = "Matt";
     private int age = 34;
+    private String gender;
     public int getAge()
     {
         return age;
@@ -625,6 +626,15 @@ class test35 {
     {
         return name;
     }
+    public String getGender()
+    {
+        return gender;
+    }
+    public void setGender(String g)
+    {
+        gender = g;
+    }
+    
 }
 public class Demo{
     public static void main(String[] args) {
@@ -675,6 +685,7 @@ public class Demo{
         obj2.show();
         test34.show(obj1);
         test35 obj = new test35();
-        System.out.println(obj.getName() + " : " + obj.getAge());
+        obj.setGender("Male");  
+        System.out.println(obj.getName() + " : " + obj.getAge() + " : " + obj.getGender());
     }
 }
