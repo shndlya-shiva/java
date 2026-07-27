@@ -589,12 +589,41 @@ class test32 {
 }
 class test33{
     static String Name;
-    int Price;
-    String Brand;
+    // Static Varible as class member
     // Static belogs to class itself, not to individual object.
     // It stops the class form making a copy of a varible & keep one shared one version for everyone. 
+    int Price;
+    String Brand;
+    // Here price and brand name are instance varible 
     public void show() {
         System.out.println(Brand + " : " + Name + " : " + Price);
+    }
+}
+class test34 {
+    // Working with Static method
+    static String Name;
+    int Price;
+    String Brand;
+    
+    public static void show(test33 obj) {
+        System.out.println(obj.Brand + " : " + Name + " : " + obj.Price);
+        // Here Price and Brand are non static varibles and hence,
+        // can not be accessed directly inside the static method,
+        // so by passing the object in the main class and accepting it in the static method,
+        // using class name,which then refered with the help of object name &,
+        // can be used indirectly in the static method. 
+    }
+}
+class test35 {
+    private String name = "Matt";
+    private int age = 34;
+    public int getAge()
+    {
+        return age;
+    }
+    public String getName()
+    {
+        return name;
     }
 }
 public class Demo{
@@ -640,8 +669,12 @@ public class Demo{
         obj2.Brand = "Samsung";
         obj2.Price = 1599;
         obj2.Name = "Smarthphone";
-        obj1.Name = "Phone";
+        test33.Name = "Phone";
+        // Static varible should be called by the class name and not the object name.
         obj1.show();
         obj2.show();
+        test34.show(obj1);
+        test35 obj = new test35();
+        System.out.println(obj.getName() + " : " + obj.getAge());
     }
 }
