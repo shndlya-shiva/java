@@ -618,9 +618,13 @@ class test35 {
     private String name;
     private int age;
     private String gender;
-    public test35() {
+    public test35() { // Defult constructor 
        age = 30;
        name = "Matt";
+    }
+    public test35(int a, String n) { //Parmetrized Constructor
+        age = a;
+        name = n;
     }
     public int getAge()
     {
@@ -688,8 +692,9 @@ public class Demo{
         // Static varible should be called by the class name and not the object name.
         test34.show(obj1);
         test35 obj = new test35();
-        test35 obj3Test35 = new test35();
+        test35 obj3Test35 = new test35(29, "Nelson");
         obj.setGender("Male");  
         System.out.println(obj.getName() + " : " + obj.getAge() + " : " + obj.getGender());
+        System.out.println(obj3Test35.getName() + " : " + obj3Test35.getAge());
     }
 }
