@@ -618,6 +618,9 @@ class test35 {
     private String name = "Matt";
     private int age = 34;
     private String gender;
+    public test35() {
+        System.out.println("in constructor ");
+    }
     public int getAge()
     {
         return age;
@@ -634,7 +637,6 @@ class test35 {
     {
         gender = g;
     }
-    
 }
 public class Demo{
     public static void main(String[] args) {
@@ -680,11 +682,12 @@ public class Demo{
         obj2.Price = 1599;
         obj2.Name = "Smarthphone";
         test33.Name = "Phone";
-        // Static varible should be called by the class name and not the object name.
         obj1.show();
         obj2.show();
+        // Static varible should be called by the class name and not the object name.
         test34.show(obj1);
         test35 obj = new test35();
+        test35 obj3Test35 = new test35();
         obj.setGender("Male");  
         System.out.println(obj.getName() + " : " + obj.getAge() + " : " + obj.getGender());
     }
