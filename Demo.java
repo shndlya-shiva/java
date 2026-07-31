@@ -615,11 +615,12 @@ class test34 {
     }
 }
 class test35 {
-    private String name = "Matt";
-    private int age = 34;
+    private String name;
+    private int age;
     private String gender;
     public test35() {
-        System.out.println("in constructor ");
+       age = 30;
+       name = "Matt";
     }
     public int getAge()
     {
