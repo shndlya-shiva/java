@@ -696,11 +696,13 @@ public class Demo{
         obj.setGender("Male");  
         System.out.println(obj.getName() + " : " + obj.getAge() + " : " + obj.getGender());
         System.out.println(obj3Test35.getName() + " : " + obj3Test35.getAge());
-        AdvCalc Calc1 = new AdvCalc();
+        SciCalc Calc1 = new SciCalc();
         int result1 = Calc1.add(10, 20);
         int result2 = Calc1.subtract(20, 10);
         int result3 = Calc1.multiply(10, 20);
         int result4 = Calc1.divide(20, 10);
-        System.out.println("Addition: " + result1 + " Subtraction: " + result2 + " Multiplication: " + result3 + " Division: " + result4);
+        double result5 = Calc1.square(5);
+        double result6 = Calc1.squareRoot(9);
+        System.out.println("Addition: " + result1 + " Subtraction: " + result2 + " Multiplication: " + result3 + " Division: " + result4 + " Square: " + result5 + " Square Root: " + result6);
     }
 }
