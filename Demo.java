@@ -696,5 +696,9 @@ public class Demo{
         obj.setGender("Male");  
         System.out.println(obj.getName() + " : " + obj.getAge() + " : " + obj.getGender());
         System.out.println(obj3Test35.getName() + " : " + obj3Test35.getAge());
+        Calc Calc1 = new Calc();
+        int result1 = Calc1.add(10, 20);
+        int result2 = Calc1.subtract(20, 10);
+        System.out.println("Addition: " + result1 + " Subtraction: " + result2);
     }
 }
