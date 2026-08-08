@@ -3,6 +3,7 @@ public class SciCalc extends AdvCalc {
 // square and squareRoot
 // SciCalc is a subclass of AdvCalc class and it inherits the methods add, subtract, multiply and divide from AdvCalc class
 // Multilevel inheritance is demonstrated here where SciCalc inherits from AdvCalc which in turn inherits from Calc class
+// java does not support multiple inheritance but it supports multilevel inheritance
 public int square(int a) {
         return a * a;
     }
