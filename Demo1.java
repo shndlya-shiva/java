@@ -1,24 +1,27 @@
-class A {
-    public A() {
+// This and Super Keyword in Java
+// This keyword is used to refer to the current class instance variable.
+// Super keyword is used to refer to the parent class instance variable.
+class C {
+    public C() {
         super();
-        System.out.println("in A");
+        System.out.println("in C");
     }
-    public A(int a) {
+    public C(int a) {
         super();
-        System.out.println("int i A ");
+        System.out.println("int i C ");
     }
 }
-class B extends A {
-    public B() {
-        System.out.println("in B");
+class D extends C {
+    public D() {
+        System.out.println("in D");
     }
-    public B(int a) {
+    public D(int a) {
         this();
-        System.out.println("int in B ");
+        System.out.println("int in D ");
     }
 }
 public class Demo1 {
     public static void main(String[] args) {
-        B obj = new B(4);
+        D obj = new D(4);
     }
 }
