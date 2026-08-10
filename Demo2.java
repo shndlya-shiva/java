@@ -5,10 +5,17 @@ class C
     {
         System.out.println("in C");
     }
+    public void config()
+    {
+        System.out.println("config in C");
+    }
 }
 class D extends C 
 {
-    
+    public void show()
+    {
+         System.out.println("in D");
+    }
 }
 public class Demo2 
 {
@@ -16,5 +23,7 @@ public class Demo2
     {
         D obj = new D();
         obj.show();
+        obj.config();
+
     }
 }
