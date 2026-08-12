@@ -3,10 +3,19 @@
 // Final variable: Once a final variable is assigned, it cannot be changed. It can be assigned only once.
 // Final method: A final method cannot be overridden by subclasses.
 // Final class: A final class cannot be subclassed. It can be used to prevent inheritance.
+final class A
+{
+    public void show()
+    {
+        System.out.println("This is a final class");
+    }
+}
 public class Demo2 {
     public static void main (String [] args)
     {
         final int a = 10;
         System.out.println(a);
+        A obj = new A();
+        obj.show();
     }
 }
