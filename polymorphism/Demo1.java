@@ -30,5 +30,6 @@ public class Demo1
         // This is an example of polymorphism in Java, where a subclass object can be referred to by a superclass reference variable.
         // This allows for dynamic method dispatch, where the method that gets called is determined at runtime
         // Based on the actual object type, rather than the reference type.
+        // Also this only works with the inheritance, if the class D is not extending the class C then we will get a compile time error.
     }
 }
