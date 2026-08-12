@@ -10,6 +10,20 @@ final class C
         System.out.println("This is a final class");
     }
 }
+class D
+{
+    public final void show()
+    {
+        System.out.println("This is a normal class");
+    }
+}
+class E extends D
+{
+    public void show() // This will cause a compile-time error because the show() method in class D is declared as final and cannot be overridden in subclass E.
+    {
+        System.out.println("This is a subclass of class D");
+    }
+}
 public class Demo2 {
     public static void main (String [] args)
     {
@@ -17,5 +31,9 @@ public class Demo2 {
         System.out.println(a);
         C obj = new C();
         obj.show();
+        D obj2 = new D();
+        obj2.show();
+        E obj3 = new E();
+        obj3.show();
     }
 }
