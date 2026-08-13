@@ -1,27 +1,33 @@
-// This and Super Keyword in Java
-// This keyword is used to refer to the current class instance variable.
-// Super keyword is used to refer to the parent class instance variable.
-class A {
-    public A() {
-        super();
-        System.out.println("in A");
+// Object Class equals() toString() hashCode() 
+// equals() method is used to compare the content of the object
+// toString() method is used to return the string representation of the object
+// hashCode() method is used to return the hash code of the object
+class laptop
+{
+    String model;
+    int price;
+
+    public String toString()
+    {
+        return model + " " + price;
     }
-    public A(int a) {
-        super();
-        System.out.println("int i A ");
-    }
-}
-class B extends A {
-    public B() {
-        System.out.println("in B");
-    }
-    public B(int a) {
-        this();
-        System.out.println("int in B ");
+    public boolean equals(laptop that)
+    {
+        return this.model.equals(that.model) && this.price == that.price;
     }
 }
 public class Demo1 {
-    public static void main(String[] args) {
-        B obj = new B(4);
+    public static void main(String[] args) 
+    {
+        laptop l1 = new laptop();
+        l1.model = "Dell";
+        l1.price = 50000;
+
+        laptop l2 = new laptop();
+        l2.model = "Dell";
+        l2.price = 50000;
+
+        boolean result = l1.equals(l2);
+        System.out.println(result);
     }
 }
