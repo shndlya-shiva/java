@@ -30,6 +30,12 @@ class E
         }
     }
 }
+// Abstract class is a class that is declared with the abstract keyword.
+abstract class cars
+{
+    public abstract void drive();
+    
+}
 public class InnerClass
 {
     public static void main (String [] args) 
@@ -54,5 +60,14 @@ public class InnerClass
             }
         };
         obj3.show();
+        // Creating an abstract & anonymous inner class which is a class without a name and is used to override the method of an abstract class.
+        cars obj4 = new cars()
+        {
+            public void drive()
+            {
+                System.out.println("In drive method of abstract & anonymous inner class");
+            }
+        };
+        obj4.drive();
     }
 }
