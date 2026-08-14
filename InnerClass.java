@@ -34,6 +34,7 @@ class E
 abstract class cars
 {
     public abstract void drive();
+    public abstract void playMusic();
     
 }
 public class InnerClass
@@ -63,11 +64,18 @@ public class InnerClass
         // Creating an abstract & anonymous inner class which is a class without a name and is used to override the method of an abstract class.
         cars obj4 = new cars()
         {
+            // Overriding the abstract method of abstract class
             public void drive()
             {
                 System.out.println("In drive method of abstract & anonymous inner class");
             }
+            // It also works with multiple abstract methods of abstract class
+            public void playMusic()
+            {
+                System.out.println("In playMusic method of abstract & anonymous inner class");
+            }
         };
         obj4.drive();
+        obj4.playMusic();
     }
 }
