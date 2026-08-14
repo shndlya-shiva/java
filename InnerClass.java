@@ -19,6 +19,13 @@ class E
             System.out.println("In config method of inner class");
         }
     }
+    static class G
+    {
+        public void display()
+        {
+            System.out.println("In display method of static inner class");
+        }
+    }
 }
 public class InnerClass
 {
@@ -31,5 +38,9 @@ public class InnerClass
         // Syntax: OuterClass.InnerClass obj = outerObj.new InnerClass();
         E.F obj1 = obj.new F();
         obj1.config();
+        // Creating object of static inner class
+        // Syntax: OuterClass.StaticInnerClass obj = new OuterClass.StaticInnerClass();
+        E.G obj2 = new E.G();
+        obj2.display();
     }
 }
