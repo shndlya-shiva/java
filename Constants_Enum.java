@@ -12,7 +12,7 @@ public class Constants_Enum {
         System.out.println(s1); // Printing it directly will return it address value for the values loop is used
         for (Status s2 : s1)
         {
-            System.out.println(s2);
+            System.out.println(s2 + " : " + s2.ordinal()); // Oridinal returns the index values of the values
         }
     }    
 }
