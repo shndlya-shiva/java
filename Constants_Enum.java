@@ -24,6 +24,21 @@ public class Constants_Enum {
             System.out.println("Fetching Data ");
         else
             System.out.println("Congratulations ");
-           
+        // Enum with Switch Statement
+        Status s4 = Status.Success;
+        switch (s4) 
+        {
+            case Running:
+                System.out.println("Fetching Data ");
+                break;
+            case Pending:
+                System.out.println("Work in Progress ");
+                break;
+            case Success:
+                System.out.println("Congratulations ");
+                break;
+            default:
+                System.out.println("Try Again ");
+            }
     }
 }
