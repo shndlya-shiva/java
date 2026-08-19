@@ -14,5 +14,16 @@ public class Constants_Enum {
         {
             System.out.println(s2 + " : " + s2.ordinal()); // Oridinal returns the index values of the values
         }
-    }    
+        // Enum with if-else
+        Status s3 = Status.Failed;
+        if( s3 == Status.Failed)
+            System.out.println("Try Again ");
+        else if (s3 == Status.Pending) 
+            System.out.println("Work in Progress ");
+        else if (s3 == Status.Running) 
+            System.out.println("Fetching Data ");
+        else
+            System.out.println("Congratulations ");
+           
+    }
 }
