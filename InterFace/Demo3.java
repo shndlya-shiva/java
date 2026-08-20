@@ -18,9 +18,14 @@ public class Demo3 {
         {
             public void show()
             {
-                System.out.println("Show in G");
+                System.out.println("Show in G1");
             }
         };
         objG.show();
+        // With Lambda Expression 
+        G objG2 = () -> 
+        System.out.println("Show in G2");
+        objG2.show();
+        
     }
 }
