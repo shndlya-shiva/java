@@ -26,7 +26,7 @@ public class Constants_Enum1 {
         
         Laptops lap = Laptops.LOQ; // For one Constant
         System.out.println(lap + " : " + lap.getPrice());
-        for (Laptops lap1 : Laptops.values())
+        for (Laptops lap1 : Laptops.values()) // For all the values
         {
             System.out.println(lap1 + " : " + lap1.getPrice());
         }
