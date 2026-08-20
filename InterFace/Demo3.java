@@ -12,6 +12,12 @@ interface G
 {
     void show();
 }
+
+@FunctionalInterface
+interface H
+{
+    void show1(int n);
+}
 public class Demo3 {
     public static void main(String[] args) {
         G objG = new G() 
@@ -26,6 +32,9 @@ public class Demo3 {
         G objG2 = () -> 
         System.out.println("Show in G2");
         objG2.show();
-        
+        // Lambda Expression with variables
+        // It can also work with multiple varibales
+        H objH = (int n) -> System.out.println(n);
+        objH.show1(10);
     }
 }
