@@ -6,6 +6,8 @@
 // 
 
 package InterFace;
+
+@FunctionalInterface
 interface G
 {
     void show();
